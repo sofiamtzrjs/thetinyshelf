@@ -130,7 +130,7 @@ button{
     .top{
         grid-area: top;
         margin-top: 90px;
-        height: 500px;
+        height: 30rem;
         background-image: url(../assets/bg.jpg);
         color: beige;
         display: grid;
@@ -160,21 +160,37 @@ button{
     .wave{
         grid-area: wave;
         padding-top: 20px;
+        height: 9.8rem;
+    }
+    .slider{
+        display: flex;
+        flex-direction: column;
+    }
+    .legend{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 2rem;
+        z-index: 1;
     }
     .swiper{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
-
-    .card{
-        background-color: #ffffff;
+    .card{  
         width: 20em;
         height: 30rem;
-        border-radius: 2em;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 2em 1em;
         display: flex;
         align-items: center;
         flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .card_image{
         width: 10em;
@@ -320,7 +336,7 @@ button{
         grid-area: texto;
     }
     .top h1{
-        font-size: 50px;
+        font-size: 3rem;
     }
     .top p{
         font-size: 20px;
@@ -329,7 +345,71 @@ button{
     .wave{
         grid-area: wave;
         padding-top: 20px;
+        height: 15rem;
     }
+    .swiper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .legend{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .card{  
+        width: 20em;
+        height: 30rem;
+        padding: 2em 1em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .card_image{
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        border: 5px solid #3a2903;
+        padding: 3px;
+        margin-bottom: 2em;
+    }
+    .card_image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .card_content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_title{
+        font-size: 1.5rem;
+        color: #3a2903;
+    }
+    .card_name{
+        font-size: 1.3rem;
+    }
+    .card_text{
+        text-align: center;
+        margin: 1em 0;
+    }
+    .card_btn{
+        border: 0;
+        border-radius: 20px;
+        padding: .6em;
+        margin-top: .5em;
+        background-color: #3a2903;
+        color: beige;
+        text-transform: uppercase;
+    }
+    
 
 }
 
