@@ -319,6 +319,7 @@ button{
         grid-area: top;
         margin-top: 90px;
         height: 700px;
+        width: 100%;
         background-image: url(../assets/bg.jpg);
         color: beige;
         display: grid;
@@ -347,7 +348,7 @@ button{
         padding-top: 20px;
         height: 15rem;
     }
-    .swiper{
+    .cards{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -362,7 +363,7 @@ button{
     }
     .card{  
         width: 20em;
-        height: 30rem;
+        height: 40rem;
         padding: 2em 1em;
         display: flex;
         align-items: center;
@@ -410,6 +411,21 @@ button{
         text-transform: uppercase;
     }
     
+    .swiper {
+    padding: 3rem;
+    width: 90%;
+    }
+
+    .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
 
 }
 
