@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ANIMATIONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/index.css">
+    
+
+    <title>The Tiny Shelf</title>
+</head>
+<body>
+    <main>
+        <header>
+            <section class="logo">
+                <h1 class="nav_logo animate__animated animate__fadeIn">
+                    The Tiny Shelf
+                </h1>
+            </section>
+            <label for="menu" class="nav_label">
+                <img src="./assets/menu.svg" alt="">
+            </label>
+            <input type="checkbox" id="menu" class="nav_input">
+            <section class="menu animate__animated animate__fadeIn">
+                <ul class="nav_menu">
+                    <li class="books"><a href="books.html" class="nav_item">Books</a>
+                        <ul class="sub_menu animate__animated animate__fadeIn">
+                            <li><a href="trending.html" class="sub_item">Trending</a></li>
+                            <li><a href="genres.html" class="sub_item">Genres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="collections.html" class="nav_item">Collections</a></li>
+                    <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
+                </ul>
+            </section>
+            
+        </header>
+        <section class="top">
+            <div class="empty"></div>
+            <div data-aos="fade-up" class="text">
+                <h1>Welcome to our shelf!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, necessitatibus fugiat animi inventore ducimus tempora placeat laboriosam consequatur optio, recusandae unde praesentium, id voluptate non. Sunt nostrum eaque ducimus cumque.</p>
+            </div>  
+            <div data-aos="fade-up" style="overflow: hidden;" class="wave" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div> 
+        </section>
+        <section data-aos="zoom-out-up" class="legend">
+            <h1> This month favorites</h1>
+        </section>
+        
+    </main>
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div data-aos="fade-up" class="card swiper-slide">
+              <div class="card_image">
+                  <img src="./assets/galeria.png" alt="card image">
+              </div>
+              <div class="card_content">
+                  <span class="card_title">Book tittle</span>
+                  <span class="card_name">Author</span>
+                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="card swiper-slide">
+                <div class="card_image">
+                    <img src="./assets/galeria.png" alt="card image">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Book tittle</span>
+                    <span class="card_name">Author</span>
+                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="card swiper-slide">
+                <div class="card_image">
+                    <img src="./assets/galeria.png" alt="card image">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Book tittle</span>
+                    <span class="card_name">Author</span>
+                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="card swiper-slide">
+                  <div class="card_image">
+                      <img src="./assets/galeria.png" alt="card image">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Book tittle</span>
+                      <span class="card_name">Author</span>
+                      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                  </div>
+              </div>
+              <div data-aos="fade-up" class="card swiper-slide">
+                <div class="card_image">
+                    <img src="./assets/galeria.png" alt="card image">
+                </div>
+                <div class="card_content">
+                    <span class="card_title">Book tittle</span>
+                    <span class="card_name">Author</span>
+                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="card swiper-slide">
+                  <div class="card_image">
+                      <img src="./assets/galeria.png" alt="card image">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Book tittle</span>
+                      <span class="card_name">Author</span>
+                      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                      <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                  </div>
+              </div>
+            
+            
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+    <!-- Swiper -->
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -159,12 +159,8 @@ button{
     }
     .wave{
         grid-area: wave;
-        padding-top: 20px;
-        height: 9.8rem;
-    }
-    .slider{
-        display: flex;
-        flex-direction: column;
+        padding-top: 30px;
+        height: 9.5rem;
     }
     .legend{
         font-size: 1.5rem;
@@ -234,8 +230,8 @@ button{
 }
 @media(min-width:900px){
     body{
+        overflow-x: hidden;
         display: grid;
-        height: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -252,7 +248,7 @@ button{
     }
     header{
         grid-area: navs;
-        height: 90px;
+        height: 100px;
         width: 100%;
         background-color: #ad9a6fff;
         color: #3a2903;
@@ -268,14 +264,14 @@ button{
     }
     .nav_logo{
         font-family: 'Poppins', sans-serif;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding-left: 40px;
         grid-area: logo;
     }
     .menu{
         font-family: 'Comfortaa', cursive;
         color: #3a2903;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .nav_menu{
         grid-area: menu;
@@ -337,34 +333,27 @@ button{
         grid-area: texto;
     }
     .top h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .top p{
         font-size: 20px;
-        padding: 5px 3rem 5px 3rem;
+        padding: 5px 6rem 5px 6rem;
     }
     .wave{
         grid-area: wave;
-        padding-top: 20px;
+        padding-top: 30px;
         height: 15rem;
     }
-    .cards{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
     .legend{
-        font-size: 2rem;
+        padding-top: 1.1em;
+        font-size: 2.5rem;
         text-align: center;
-    }
+        color: #3a2903;
+    }   
     .card{  
         width: 20em;
         height: 40rem;
-        padding: 2em 1em;
+        padding: 2em 2em;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -373,8 +362,8 @@ button{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .card_image{
-        width: 10em;
-        height: 10em;
+        width: 13em;
+        height: 13em;
         border-radius: 50%;
         border: 5px solid #3a2903;
         padding: 3px;
@@ -391,23 +380,26 @@ button{
         flex-direction: column;
     }
     .card_title{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: #3a2903;
     }
     .card_name{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        color: #3a2903;
     }
     .card_text{
         text-align: center;
         margin: 1em 0;
+        font-size: 1.1em;
     }
     .card_btn{
         border: 0;
-        border-radius: 20px;
-        padding: .6em;
+        border-radius: 25px;
+        padding: .8em;
         margin-top: .5em;
         background-color: #3a2903;
         color: beige;
+        font-size: 1rem;
         text-transform: uppercase;
     }
     
@@ -415,7 +407,6 @@ button{
     padding: 3rem;
     width: 90%;
     }
-
     .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -423,6 +414,9 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    }
+    .swiper-button-next, .swiper-button-prev, i{
+        color: #3a2903;
     }
 
 
