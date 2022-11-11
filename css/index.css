@@ -161,9 +161,6 @@ button{
         grid-area: wave;
         padding-top: 20px;
     }
-    .swiper{
-        display: block;
-    }
 
     .card{
         background-color: #ffffff;
