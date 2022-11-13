@@ -29,6 +29,9 @@ button{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
+a{
+    color: #3a2903;
+}
 @media(max-width:899px){
     body{
         display: grid;
@@ -82,7 +85,7 @@ button{
         display: none;
         position: fixed;
         border-radius: 2px 2px 10px 10px;
-        background: wheat;
+        background: white;
         box-shadow: #0000003d 0px 3px 8px;
         font-family: 'Comfortaa', cursive;
         height: 0;
@@ -130,7 +133,7 @@ button{
     .top{
         grid-area: top;
         margin-top: 90px;
-        height: 500px;
+        height: 30rem;
         background-image: url(../assets/bg.jpg);
         color: beige;
         display: grid;
@@ -159,19 +162,29 @@ button{
     }
     .wave{
         grid-area: wave;
-        padding-top: 20px;
+        padding-top: 30px;
+        height: 9.5rem;
     }
-
+    .legend{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 2rem;
+        z-index: 1;
+    }
+    .swiper{
+        display: block;
+    }
     .card{
         background-color: #ffffff;
         width: 20em;
         height: 30rem;
-        border-radius: 2em;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 2em 1em;
         display: flex;
         align-items: center;
         flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     .card_image{
         width: 10em;
@@ -215,9 +228,9 @@ button{
 }
 @media(min-width:900px){
     body{
+        overflow-x: hidden;
         display: grid;
-        height: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "navs" 
@@ -233,7 +246,7 @@ button{
     }
     header{
         grid-area: navs;
-        height: 90px;
+        height: 110px;
         width: 100%;
         background-color: #ad9a6fff;
         color: #3a2903;
@@ -245,31 +258,32 @@ button{
         grid-template-areas: 
         "logo menu";
         align-items: center;
-        justify-content: center;
     }
     .nav_logo{
         font-family: 'Poppins', sans-serif;
         font-size: 3.5rem;
         padding-left: 40px;
         grid-area: logo;
+        color: #3a2903;
     }
     .menu{
         font-family: 'Comfortaa', cursive;
         color: #3a2903;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .nav_menu{
         grid-area: menu;
         display: flex;
         flex-direction: row;
-        gap: 4em;  
+        gap: 3em;  
+        align-items: flex-end;
         justify-content: center;
     }
     .nav_item{
         color: #3a2903;
     }
     .nav_item:hover{
-        color: wheat;
+        color: white;
         transition: all 0.8s ease-out;
 
     }
@@ -291,7 +305,7 @@ button{
 
     }
     .sub_item {
-        color: wheat;
+        color: white;
     }
     .sub_item:hover{
         color: #3a2903;
@@ -300,6 +314,7 @@ button{
         grid-area: top;
         margin-top: 90px;
         height: 700px;
+        width: 100%;
         background-image: url(../assets/bg.jpg);
         color: beige;
         display: grid;
@@ -317,15 +332,218 @@ button{
         grid-area: texto;
     }
     .top h1{
-        font-size: 50px;
+        font-size: 3.5rem;
     }
     .top p{
-        font-size: 20px;
-        padding: 5px 3rem 5px 3rem;
+        font-size: 1.1em;
+        padding: 5px 6rem 5px 6rem;
     }
     .wave{
         grid-area: wave;
-        padding-top: 20px;
+        padding-top: 30px;
+        height: 15rem;
+    }
+    .legend{
+        padding-top: 1.1em;
+        font-size: 2rem;
+        text-align: center;
+        color: #3a2903;
+    }
+    .swiper {
+        padding: 0 5rem 0 5rem;
+        width: 90%;
+        display: flex;
+        height: 40em;
+    }
+    .swiper-wrapper {
+        grid-area: slider;
+        flex-direction: row;
+        align-items: center;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    .card{  
+        width: 10em;
+        height: 30rem;
+        padding: 2em 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .card_image{
+        width: 7em;
+        height: 7em;
+        border-radius: 50%;
+        border: 5px solid #3a2903;
+        padding: 3px;
+        margin-bottom: 2em;
+    }
+    .card_image img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .card_content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #3a2903;
+    }
+    .card_title{
+        font-size: 1.5rem;
+    }
+    .card_name{
+        font-size: 1.1rem;
+    }
+    .card_text{
+        text-align: center;
+        margin: 1em 0;
+        font-size: .9em;
+        color: #3a2903;
+    }
+
+    .swiper-button-next, .swiper-button-prev, i{
+        color: #3a2903;
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;
+        height: 26rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "name icons" 
+        "menuFoot icons"
+        "menuFoot form"
+        "copy copy";
+
+        background-color: #ad9a6fff;
+    }
+    .foot_logo{
+        grid-area: name;
+        font-size: 2rem;
+        padding: .5em 0 0 2em;
+        color: #3a2903;
+    }
+    .foot_nav{
+        grid-area: menuFoot;
+        font-family: 'comfortaa', cursive;
+        font-size: 1.1rem;
+        padding: .6em 0 0 2.5em;
+        display: flex;
+        flex-direction: row;
+    }
+    .foot_menu{
+        display: flex;
+        flex-direction: row;
+        color: rgb(58, 41, 3);
+    }
+    .foot_menu>li{
+        padding: 1em;
+        font-weight: bold;
+    }
+    .foot_sub{
+        padding-left: .5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_sub>li{
+        padding: .6em 0 0 0;
+        font-weight: 300;
+    }
+    .icons{
+        height: fit-content;
+        grid-area: icons;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 8em;
+        padding-top: 4em;
+    }
+    .icons>img{
+        padding-left: 1em ;
+    }
+    .subscribe{
+        grid-area: form;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 8em;
+        padding-bottom: 1em;
+    }
+    form{
+        border-radius: 10px;
+        background-color: white;
+        height: 14em;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    form h1{
+        font-size: 1em;
+        padding: .7em .7em 0 .7em;
+        color: #3a2903;
+    }
+    fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name, .mail, .button{
+        padding: .6em;
+    }
+    input{
+        padding: .7em;
+        font-family: 'Comfortaa', cursive;
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid gray;
+        transition: all 1s ease-out;
+    }
+    
+    .send{
+        padding: 1em;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(to right, #9e5023, #cc8e6d);
+        color: white;
+        cursor: pointer;
+        transition: all .8s ease-out;
+    }
+    .send:hover{
+        color: #3a2903;
+    }
+    
+    
+    
+    .copy{
+        padding-top: 1em;
+        grid-area: copy;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+        color: #3a2903;
     }
 
 }
