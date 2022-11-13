@@ -232,7 +232,7 @@ button{
     body{
         overflow-x: hidden;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr  1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "navs" 
@@ -248,7 +248,7 @@ button{
     }
     header{
         grid-area: navs;
-        height: 100px;
+        height: 110px;
         width: 100%;
         background-color: #ad9a6fff;
         color: #3a2903;
@@ -392,20 +392,12 @@ button{
         margin: 1em 0;
         font-size: 1.1em;
     }
-    .card_btn{
-        border: 0;
-        border-radius: 25px;
-        padding: .8em;
-        margin-top: .5em;
-        background-color: #3a2903;
-        color: beige;
-        font-size: 1rem;
-        text-transform: uppercase;
-    }
-    
     .swiper {
-    padding: 3rem;
+    padding: 5rem;
     width: 90%;
+    }
+    .swiper-wrapper {
+       grid-area: slider;
     }
     .swiper-slide {
     text-align: center;
@@ -418,8 +410,50 @@ button{
     .swiper-button-next, .swiper-button-prev, i{
         color: #3a2903;
     }
+    footer{
+        grid-area: footer;
+        width: 100%;
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "name name" 
+        "menuFoot icons"
+        "menuFoot form"
+        "copy copy";
 
-
+        background-color: #9e8752;
+    }
+    .foot_logo{
+        grid-area: name;
+        font-size: 2.5rem;
+        padding-left: .5em;
+    }
+    .foot_nav{
+        grid-area: menuFoot;
+        font-family: 'comfortaa', cursive;
+        font-size: 1.5rem;
+        padding-left: 3em;
+        display: flex;
+        flex-direction: row;
+    }
+    .icons{
+        grid-area: icons;
+    }
+    .subscribe{
+        grid-area: form;
+    }
+    .copy{
+        grid-area: copy;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 1.3em;
+    }
 
 }
 
