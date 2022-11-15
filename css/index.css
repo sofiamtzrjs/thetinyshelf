@@ -9,12 +9,6 @@
 .nav_label, .nav_input{
     display: none;
 }
-.nav_input:checked + .nav_menu{
-    display: none;
-} 
-.animate__animated.animate__fadeIn{
-    --animate-duration: 0.6s;
-}
 p{
     font-family: 'comfortaa', cursive;
 }
@@ -35,7 +29,6 @@ a{
 @media(max-width:899px){
     body{
         display: grid;
-        height: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -47,38 +40,38 @@ a{
     header{
         grid-area: navs;
         width: 100%;
-        color: #3a2903;
+        height: 6em;
         position: fixed;
+        background-color: #3a290383;
         z-index: 3;
         display: grid;
         grid-template-columns: 1.5fr 0.5fr;
         grid-template-rows: 1fr 1fr ;
         grid-template-areas: 
         "logo label"
-        "nav nav";
-        align-items: center;
+        "nav nav"; 
     }
     .nav_logo{
         font-family: 'Poppins', sans-serif;
-        background-color: #ad9a6fff;
-        height: 100px;
+        background: none;
         width: 100%;
         font-size: 2.3rem;
         padding-left: 1rem;
         padding-top: 1rem;
         grid-area: logo;
+        color: #f5deb3;
     }
     .nav_label{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-start;
-        background-color: #ad9a6fff;
         height: 100px;
         width: 100%;
         padding-right: 1.5rem;
         padding-top: 1.5rem;
         grid-area: label;
+        z-index: 4;
     }
     .menu{
         grid-area: nav;
@@ -101,8 +94,8 @@ a{
         padding-left: 2rem;
         color: #3a2903;
         font-size: 1.2rem;
-    }   
-    .nav_input:checked + .menu{
+    } 
+    .nav_input:checked +.menu{
         position: absolute;
         top: .1rem;
         bottom: 0;
@@ -132,7 +125,6 @@ a{
     }
     .top{
         grid-area: top;
-        margin-top: 90px;
         height: 30rem;
         background-image: url(../assets/bg.jpg);
         color: beige;
@@ -224,6 +216,138 @@ a{
         color: beige;
         text-transform: uppercase;
     }
+    .swiper{
+        display: none;
+    }
+    footer{
+        overflow-x: hidden;
+        grid-area: footer;
+        width: 100%;
+        height: 9rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "name icons" 
+        "menuFoot icons"
+        "menuFoot form"
+        "copy copy";
+
+        background-color: #ad9a6fff;
+    }
+    .foot_logo{
+        grid-area: name;
+        font-size: 1.5rem;
+        color: #3a2903;
+    }
+    .foot_nav{
+        grid-area: menuFoot;
+        font-family: 'comfortaa', cursive;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .foot_menu{
+        display: flex;
+        flex-direction: row;
+        color: rgb(58, 41, 3);
+    }
+    .foot_menu>li{
+        padding: 1em;
+        font-weight: bold;
+    }
+    .foot_sub{
+        padding-left: .5em;
+        display: flex;
+        flex-direction: column;
+    }
+    .foot_sub>li{
+        padding: .6em 0 0 0;
+        font-weight: 300;
+    }
+    .icons{
+        height: fit-content;
+        grid-area: icons;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4em;
+        padding-left: 11em;
+    }
+    .icons>img{
+        height: 10px;
+    }
+    .icons>a{
+        padding-left: 1em ;
+    }
+    .subscribe{
+        grid-area: form;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 8em;
+        padding-bottom: 1em;
+    }
+    form{
+        border-radius: 10px;
+        background-color: white;
+        height: 14em;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    form h1{
+        font-size: 1em;
+        padding: .7em .7em 0 .7em;
+        color: #3a2903;
+    }
+    fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name, .mail, .button{
+        padding: .6em;
+    }
+    .subscribe input{
+        padding: .7em;
+        font-family: 'Comfortaa', cursive;
+        border: none;
+        background-color: white;
+        border-bottom: 2px solid gray;
+        transition: all 1s ease-out;
+    }    
+    .send{
+        padding: 1em;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(to right, #9e5023, #cc8e6d);
+        color: white;
+        cursor: pointer;
+        transition: all .8s ease-out;
+    }
+    .send:hover{
+        color: #3a2903;
+    }
+    .copy{
+        padding-top: 1em;
+        grid-area: copy;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+        color: #3a2903;
+    }
     
 }
 @media(min-width:900px){
@@ -246,10 +370,9 @@ a{
     }
     header{
         grid-area: navs;
-        height: 110px;
+        height: 80px;
         width: 100%;
-        background-color: #ad9a6fff;
-        color: #3a2903;
+        background-color: #3a290383;
         position: fixed;
         z-index: 3;
         display: grid;
@@ -264,7 +387,7 @@ a{
         font-size: 3.5rem;
         padding-left: 40px;
         grid-area: logo;
-        color: #3a2903;
+        color: beige;
     }
     .menu{
         font-family: 'Comfortaa', cursive;
@@ -280,7 +403,7 @@ a{
         justify-content: center;
     }
     .nav_item{
-        color: #3a2903;
+        color: beige;
     }
     .nav_item:hover{
         color: white;
@@ -300,7 +423,7 @@ a{
         gap: .5em;
         align-items: center;
         justify-content: center;
-        background-color: #9e8752;
+        background-color: #9e8752b0;
         animation-delay: .3s;
 
     }
@@ -312,8 +435,7 @@ a{
     }
     .top{
         grid-area: top;
-        margin-top: 90px;
-        height: 700px;
+        height: 55em;
         width: 100%;
         background-image: url(../assets/bg.jpg);
         color: beige;
@@ -467,11 +589,11 @@ a{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
-        padding-right: 8em;
+        justify-content: center;
         padding-top: 4em;
+        padding-left: 11em;
     }
-    .icons>img{
+    .icons>a{
         padding-left: 1em ;
     }
     .subscribe{
@@ -509,15 +631,14 @@ a{
     .name, .mail, .button{
         padding: .6em;
     }
-    input{
+    .subscribe input{
         padding: .7em;
         font-family: 'Comfortaa', cursive;
         border: none;
         background-color: white;
         border-bottom: 2px solid gray;
         transition: all 1s ease-out;
-    }
-    
+    }    
     .send{
         padding: 1em;
         border: none;
@@ -530,9 +651,6 @@ a{
     .send:hover{
         color: #3a2903;
     }
-    
-    
-    
     .copy{
         padding-top: 1em;
         grid-area: copy;

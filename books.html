@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ANIMATIONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/book.css">
+    <title>The Tiny Shelf</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html">
+                <h1 class="nav_logo animate__animated animate__fadeIn">
+                    The Tiny Shelf
+                </h1>
+            </a>
+        </section>
+        <label for="menu" class="nav_label">
+            <img src="./assets/menu.svg" alt="">
+        </label>
+        <input type="checkbox" id="menu" class="nav_input">
+        <section class="menu animate__animated animate__fadeIn">
+            <ul class="nav_menu">
+                <li class="books"><a href="books.html" class="nav_item">Books</a>
+                    <ul class="sub_menu animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="sub_item">Trending</a></li>
+                        <li><a href="genres.html" class="sub_item">Genres</a></li>
+                    </ul>
+                </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="search">
+            <div class="idk">
+                <div class="look">
+                    <button>
+                        <a href="">
+                            <img src="/assets/search.svg" alt="">
+                        </a>
+                    </button>
+                </div>
+                <div class="text">
+                    <input type="text" placeholder="Look for books in our shelf!">
+                </div>
+            </div>          
+        </section>
+
+        <section class="trend"></section>
+        <section class="nytimes"></section>
+        <section class="booktok"></section>
+    </main>
+
+    <footer class="footer">
+        <section data-aos="zoom-in" class="foot_logo">
+            <a href="index.html">
+                <h1 class="animate__animated animate__fadeIn">
+                The Tiny Shelf
+                </h1>
+            </a>
+        </section>
+        <section data-aos="zoom-in" class="foot_nav animate__animated animate__fadeIn">
+            <ul class="foot_menu">
+                <li><a href="books.html" class="nav_item">Books</a>
+                    <ul class="foot_sub animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="nav_item">Trending</a></li>
+                        <li><a href="genres.html" class="nav_item">Genres</a></li>
+                    </ul>
+                </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
+            </ul>
+        </section>
+        <span class="copy">Copyright © Todos los derechos reservados | The Tiny Shelf 2022</span>
+        <section class="icons">
+            <a href="">
+                <img data-aos="zoom-in" src="./assets/face.svg" alt="">
+            </a>
+            <a href="">
+                <img data-aos="zoom-in" src="./assets/ig.svg" alt="">
+            </a>
+            <a href="">
+                <img data-aos="zoom-in" src="./assets/twitter.svg" alt="">
+            </a>
+            <a href="">
+                <img data-aos="zoom-in" src="./assets/pin.svg" alt="">
+            </a>
+        </section>
+        <section class="subscribe">
+            <form data-aos="zoom-in" action="" >
+                <fieldset>
+                    <h1>Get our latest news</h1>
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mail">
+                        <label for="mail"></label>
+                        <input type="text" placeholder="hello@example.com">
+                    </div>
+                    <div class="button">
+                        <button class="send">Subscribe</button>
+                    </div>
+                    
+                </fieldset>
+            </form>    
+        </section>
+        
+        
+
+    </footer>
+    
+    
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
