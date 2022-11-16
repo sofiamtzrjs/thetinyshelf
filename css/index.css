@@ -27,15 +27,8 @@ a{
     color: #3a2903;
 }
 @media(max-width:899px){
-    body{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "navs" 
-        "top" 
-        "slider" 
-        "footer";
+    .main{
+        height: fit-content;
     }
     header{
         grid-area: navs;
@@ -55,7 +48,7 @@ a{
         font-family: 'Poppins', sans-serif;
         background: none;
         width: 100%;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         padding-left: 1rem;
         padding-top: 1rem;
         grid-area: logo;
@@ -155,32 +148,41 @@ a{
     .wave{
         grid-area: wave;
         padding-top: 30px;
-        height: 9.5rem;
     }
     .legend{
         font-size: 1.5rem;
         text-align: center;
         padding-top: 2rem;
-        z-index: 1;
+        z-index: 3;
     }
-    .swiper{
-        display: block;
-    }
-    .card{
-        background-color: #ffffff;
-        width: 20em;
+    .swiper {
+        display:  none;
+
+    } 
+    .selection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100em;
+        padding: 2em;
+    } 
+    .card{  
+        width: 16em;
         height: 30rem;
-        padding: 2em 1em;
+        padding: 2em 2em;
         display: flex;
         align-items: center;
         flex-direction: column;
         background-color: #ffffff;
         border-radius: 2em;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 2em;
     }
     .card_image{
-        width: 10em;
-        height: 10em;
+        width: 7em;
+        height: 7em;
         border-radius: 50%;
         border: 5px solid #3a2903;
         padding: 3px;
@@ -195,57 +197,51 @@ a{
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
-    .card_title{
-        font-size: 1.5rem;
         color: #3a2903;
     }
+    .card_title{
+        font-size: 1.5em;
+    }
     .card_name{
-        font-size: 1.3rem;
+        font-size: .9rem;
     }
     .card_text{
         text-align: center;
         margin: 1em 0;
+        color: #3a2903;
     }
-    .card_btn{
-        border: 0;
-        border-radius: 20px;
-        padding: .6em;
-        margin-top: .5em;
-        background-color: #3a2903;
-        color: beige;
-        text-transform: uppercase;
-    }
-    .swiper{
-        display: none;
+    .swiper-button-next, .swiper-button-prev, i{
+        color: #3a2903;
     }
     footer{
-        overflow-x: hidden;
         grid-area: footer;
         width: 100%;
-        height: 9rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "name icons" 
-        "menuFoot icons"
-        "menuFoot form"
-        "copy copy";
-
+        overflow: hidden;
+        height: fit-content;
+        margin-top: 6em;
+        display: flex;
+        flex-direction: column;
         background-color: #ad9a6fff;
     }
     .foot_logo{
         grid-area: name;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        height: 72px;
+        padding: .5em 0 0 .5em;
         color: #3a2903;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .foot_nav{
         grid-area: menuFoot;
         font-family: 'comfortaa', cursive;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        height: 100px;
+        padding: 1em 0 1em .5em;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
     .foot_menu{
         display: flex;
@@ -272,23 +268,20 @@ a{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-top: 4em;
-        padding-left: 11em;
-    }
-    .icons>img{
-        height: 10px;
+        
     }
     .icons>a{
         padding-left: 1em ;
+        padding-top: 2em;
+        padding-bottom: 1em;
     }
     .subscribe{
         grid-area: form;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 8em;
-        padding-bottom: 1em;
+        padding-top: 2em;
     }
     form{
         border-radius: 10px;
@@ -337,7 +330,7 @@ a{
         color: #3a2903;
     }
     .copy{
-        padding-top: 1em;
+        height: fit-content;
         grid-area: copy;
         display: flex;
         flex-direction: row;
@@ -347,6 +340,7 @@ a{
         text-align: center;
         font-size: 1em;
         color: #3a2903;
+        padding: .7em;
     }
     
 }
@@ -435,7 +429,7 @@ a{
     }
     .top{
         grid-area: top;
-        height: 55em;
+        height: 53em;
         width: 100%;
         background-image: url(../assets/bg.jpg);
         color: beige;
@@ -462,8 +456,7 @@ a{
     }
     .wave{
         grid-area: wave;
-        padding-top: 30px;
-        height: 15rem;
+        padding-top: 1rem;
     }
     .legend{
         padding-top: 1.1em;
@@ -471,9 +464,12 @@ a{
         text-align: center;
         color: #3a2903;
     }
+    .selection{
+        display: none;
+    }
     .swiper {
         padding: 0 5rem 0 5rem;
-        width: 90%;
+        width: 80%;
         display: flex;
         height: 40em;
     }
@@ -539,7 +535,8 @@ a{
     footer{
         grid-area: footer;
         width: 100%;
-        height: 26rem;
+        height: 27rem;
+        margin-top: 6em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -554,7 +551,7 @@ a{
     .foot_logo{
         grid-area: name;
         font-size: 2rem;
-        padding: .5em 0 0 2em;
+        padding: 1em 0 0 2em;
         color: #3a2903;
     }
     .foot_nav{
@@ -566,11 +563,13 @@ a{
         flex-direction: row;
     }
     .foot_menu{
+        padding-top: 3em;
         display: flex;
         flex-direction: row;
         color: rgb(58, 41, 3);
     }
-    .foot_menu>li{
+    .foot_menu>li a{
+        color: #3a2903;
         padding: 1em;
         font-weight: bold;
     }
@@ -590,11 +589,12 @@ a{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding-top: 4em;
+        padding-top: 2em;
         padding-left: 11em;
     }
     .icons>a{
         padding-left: 1em ;
+        
     }
     .subscribe{
         grid-area: form;
@@ -652,8 +652,8 @@ a{
         color: #3a2903;
     }
     .copy{
-        padding-top: 1em;
         grid-area: copy;
+        padding-top: 2em;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
