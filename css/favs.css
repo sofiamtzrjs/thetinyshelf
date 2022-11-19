@@ -1,0 +1,196 @@
+/*
+charcoal: #344252ff;
+slate-gray: #6a8098ff;
+steel-teal: #748d8aff;
+light-french-beige: #ad9a6fff;
+copper-penny: #a46f6bff;
+heliotrope-gray: #ae9eb8ff;
+mountbatten-pink: #877391ff;
+font-family: 'Comfortaa', cursive;
+font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.tittle{
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    margin: 3rem;
+}
+.tittle a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    margin: 3rem;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+}
+.menu ul {
+    list-style: none;
+    padding:20px;
+    background-color: white;
+    font-size:0 /* truco por el uso de inline-block*/
+}
+.menu ul>li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 20px;
+}
+.menu ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul>li>a:hover{
+    color:#877391c7;
+}
+.menu ul ul {
+    position: absolute;
+    display: none;
+}
+      
+.menu ul ul li {
+    display: block;
+}
+
+.menu ul ul li a:hover{
+color: wheat;
+}
+.menu ul li:hover ul {
+    width: 200px;
+    display:block;
+    background-color: #877391c7;
+}
+
+
+.start_slider{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+.box{
+    margin: 2rem;
+    align-content: center;
+}
+footer h1{
+    font-family: 'Poppins', sans-serif;   
+}
+footer{
+    background-color: grey;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  .3fr 1fr .06fr;
+  
+
+    grid-template-areas: 
+        "bc bc"
+        "menuf f"
+        "footer footer";
+
+}
+.bc{
+    grid-area: bc;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+.menuf{
+    grid-area: menuf;
+}
+.f{
+    grid-area: f;
+    margin: auto;
+}
+.footer{
+    text-align: center;
+    height: 10px;
+    grid-area: footer;
+}
+form{
+    width: 100px;
+    padding: 20px 0 20px 0;
+}
+fieldset{
+    border: none;
+}
+input{
+    font-family: 'Comfortaa', cursive;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+button{
+    width: 300px;
+    height: 30px;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px;
+    border: none;
+    color: blanchedalmond;
+    background-color: black;
+}
+
+
+.menuf ul {
+    list-style: none;
+    padding:10px;
+    font-size:0 
+}
+.menuf ul>li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 15px;
+}
+.menuf ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.menuf ul>li>a:hover{
+    color: wheat;
+}
+.menuf ul ul {
+    position: absolute;
+}
+      
+.menuf ul ul li {
+    display: block;
+}
+
+.menuf ul ul li a:hover{
+color: wheat;
+}
+.menuf ul li:hover ul {
+    width: 200px;
+    display:block;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.titles{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+.tymes{
+    margin: 2rem;
+    align-content: center;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+

@@ -236,38 +236,43 @@ main{
         margin-top: 2em;
         font-size: 2.5em;
         color: beige;
-    }    
-    .bar{
-        margin-top: 3em;
-        width: 50%;
-        height: 3.5em;
+    }   
+    .genres{
+        font-family: 'Comfortaa', cursive;
+        font-size: 1.1rem;
+        padding-top: 1em;
+    }
+    .genres_menu{
+        grid-area: menu;
         display: flex;
         flex-direction: row;
+        gap: 3em;  
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .swiper {
+        padding: 0 5rem 0 5rem;
+        width: 80%;
+        display: flex;
+        height: 40em;
+    }
+    .swiper-wrapper {
+        grid-area: slider;
+        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-        padding: 1em;
-        background-color: white;
-        border-radius: 50px;
-        font-size: 1.2em;
     }
-    .look{
-        padding-right: 1em;
-        padding-left: 1em;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .search button{
-        border: none;
-        background: none;
-    }
-    .text input{
-        font-family: 'comfortaa', cursive;
-        font-size: 1em;
-        background: none;
-        border: none;
-        color: #3a2903;
-        width: 20em;
-    }
+    
     .cards_top {
-        padding-top: 6em;
+        padding-top: 5em;
         display: flex;
         flex-direction: row;
         gap: 4em;
