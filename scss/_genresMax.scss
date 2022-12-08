@@ -1,0 +1,56 @@
+.gen{
+    grid-area: search;
+    width: 100%;
+    height: 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to left, #A67C5B, #decfac );
+    & h1{
+        margin-top: 3em;
+        font-size: 2.5em;
+        color: beige;
+    }
+}
+ 
+.genres{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.1rem;
+    padding-top: 1em;
+}
+.genres_menu{
+    grid-area: menu;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;  
+    align-items: flex-end;
+    justify-content: center;
+}
+.rec:hover{
+    width: 25em;
+    transition: all 0.8s ease-out;
+    padding: 1em;
+    background: beige;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+    .rec_content{
+    transition: all 0.8s ease-out;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    }
+}
+
+.allgen{
+    height: fit-content;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.allgen h1{
+    font-size: 2.5em;
+}

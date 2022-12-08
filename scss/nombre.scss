@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300;700&display=swap');
+@import "general";
+
+//variables//
+$comfortaa: 'comfortaa', cursive;
+$font-poppins:'Poppins', sans-serif;
+
+
+@media(max-width:899px){
+    main{height: fit-content;}
+    @import "headerMin"; 
+    @import "indexMin";
+    @import "booksMin";
+    @import "trendingMin";
+    @import "genresMin";
+    @import "collectionMin";
+    @import "favsMin";
+    @import "faqs";
+    @import "footerMin";
+
+}
+@media(min-width:900px){
+    @import "headerMax";
+    @import "indexMax";
+    @import "booksMax";
+    @import "trending";
+    @import "genresMax";
+    @import "collection";
+    @import "favsMax";
+    @import "faqs";
+    @import "footerMax";
+
+}

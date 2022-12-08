@@ -1,0 +1,131 @@
+$dark-brown: #3a2903;
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    background-color: #ad9a6fff;
+}
+.foot_logo{
+    grid-area: name;
+    font-size: 2rem;
+    height: 72px;
+    padding: .5em 0 0 .5em;
+    color: $dark-brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot_nav{
+    grid-area: menuFoot;
+    font-family: 'comfortaa', cursive;
+    font-size: 1.1rem;
+    height: 100px;
+    padding: 1em 0 1em .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.foot_menu{
+    display: flex;
+    flex-direction: row;
+    color: rgb(58, 41, 3);
+}
+.foot_menu>li{
+    padding: 1em;
+    font-weight: bold;
+}
+.foot_sub{
+    padding-left: .5em;
+    display: flex;
+    flex-direction: column;
+}
+.foot_sub>li{
+    padding: .6em 0 0 0;
+    font-weight: 300;
+}
+.icons{
+    height: fit-content;
+    grid-area: icons;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icons>a{
+    padding-left: 1em ;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.subscribe{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 2em;
+}
+form{
+    border-radius: 10px;
+    background-color: white;
+    height: 14em;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+form h1{
+    font-size: 1em;
+    padding: .7em .7em 0 .7em;
+    color: $dark-brown;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name, .mail, .button{
+    padding: .6em;
+}
+.subscribe input{
+    padding: .7em;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    background-color: white;
+    border-bottom: 2px solid gray;
+    transition: all 1s ease-out;
+}    
+.send{
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #9e5023, #cc8e6d);
+    color: white;
+    cursor: pointer;
+    transition: all .8s ease-out;
+}
+.send:hover{
+    color: $dark-brown;
+}
+.copy{
+    height: fit-content;
+    grid-area: copy;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: $dark-brown;
+    padding: .7em;
+}

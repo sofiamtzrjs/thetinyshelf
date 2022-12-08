@@ -4,103 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/trending.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-    
-    <title>The Tiny Shelf</title>
-</head>
+    <meta name="description" content="Website for book recomendations">
+    <meta name="keywords" content="books, shelf, recomendations, blog, indie, aesthetic, tryout, alt">
+    <!--ICONS-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <!--ANIMATIONS + AOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!--SLIDER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Trending</title>
+</head>
 <body>
     <header>
-        <div class="tittle">
+        <section class="logo">
             <a href="index.html">
-                <h1>The Tiny Shelf</h1>   
+                <h1 class="nav_logo animate__animated animate__fadeIn">
+                    The Tiny Shelf
+                </h1>
             </a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="favs.html">Always Favs</a></li>
-                <li><a href="books.html">Books</a>
-                    <ul>
-                        <li><a href="trending.html">Trending</a></li>
-                        <li><a href="genres.html">Genres</a></li>
+        </section>
+        <label for="menu" class="nav_label">
+            <img src="./assets/menu.svg" alt="">
+        </label>
+        <input type="checkbox" id="menu" class="nav_input">
+        <section class="menu animate__animated animate__fadeIn">
+            <ul class="nav_menu">
+                <li class="books"><a href="books.html" class="nav_item">Books</a>
+                    <ul class="sub_menu animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="sub_item">Trending</a></li>
+                        <li><a href="genres.html" class="sub_item">Genres</a></li>
                     </ul>
                 </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
             </ul>
-        </div>
-    </header> 
-
-    <main>
-       <h1>
-        Trending books
-       </h1> 
-       <section class="nyork">
-        <div class="titles">
-            <div class="tymes">
-                <img src="./multimedia/galeria.png" alt="" width="300px">
-                <p>⭐⭐⭐⭐⭐</p>
+        </section>
+    </header>
+    
+    <section data-aos="zoom-in" class="intro animate__animated animate__zoomIn">
+        <h1>Hey there!</h1>
+        <p>This are some of the books trending right now, hope you find something you like :)</p>
+    </section> 
+    
+    <main class="trending">        
+        <section class="gallery">
+            <div data-aos="zoom-in" class="txt animate__animated animate__zoomIn">
+                <h1>
+                    Hey there!
+                </h1> 
+                <p>This are some of the books trending right now, hope you find something you like :)</p>
             </div>
-            <div class="tymes">
-                <img src="./multimedia/galeria.png" alt="" width="300px">
-                <p>⭐⭐⭐⭐⭐</p>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/5e/10/98/5e10987dcd18909b637b79ef157e564e.jpg">
             </div>
-    </section>
-    <section class="nyork">
-        <div class="titles">
-            <div class="tymes">
-                <img src="./multimedia/galeria.png" alt="" width="300px">
-                <p>⭐⭐⭐⭐⭐</p>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/0a/27/87/0a27877e759299baf6e02bf7b5d3e12c.jpg">
             </div>
-            <div class="tymes">
-                <img src="./multimedia/galeria.png" alt="" width="300px">
-                <p>⭐⭐⭐⭐⭐</p>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/b5/a7/22/b5a7225f2d3cf38ee345cf5ba814c47a.jpg">
             </div>
-    </section>
-
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/e7/9c/91/e79c91aa39520ca31c3cdb79dac12931.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/5e/10/98/5e10987dcd18909b637b79ef157e564e.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/0a/27/87/0a27877e759299baf6e02bf7b5d3e12c.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/b5/a7/22/b5a7225f2d3cf38ee345cf5ba814c47a.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/e7/9c/91/e79c91aa39520ca31c3cdb79dac12931.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/5e/10/98/5e10987dcd18909b637b79ef157e564e.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/564x/0a/27/87/0a27877e759299baf6e02bf7b5d3e12c.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/b5/a7/22/b5a7225f2d3cf38ee345cf5ba814c47a.jpg">
+            </div>
+            <div class="cover_image">
+                <img src="https://i.pinimg.com/236x/e7/9c/91/e79c91aa39520ca31c3cdb79dac12931.jpg">
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="caja bc">
-            <h1>The Tiny Shelf</h1>
-        </div>
-        <div class="caja e">
-            <ul>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="">Always Favs</a></li>
-                <li><a href="books.html">Books</a>
-                    <ul>
-                        <li><a href="trending.html">Trending</a></li>
-                        <li><a href="bestsellers.html">Best sellers</a></li>
-                        <li><a href="genres.html">Genres</a></li>
+    <footer class="footer">
+        <section data-aos="zoom-in" class="foot_logo">
+            <a href="index.html">
+                <h1 class="animate__animated animate__fadeIn">
+                The Tiny Shelf
+                </h1>
+            </a>
+        </section>
+        <section data-aos="zoom-in" class="foot_nav animate__animated animate__fadeIn">
+            <ul class="foot_menu">
+                <li><a href="books.html" class="nav_item">Books</a>
+                    <ul class="foot_sub animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="nav_item">Trending</a></li>
+                        <li><a href="genres.html" class="nav_item">Genres</a></li>
                     </ul>
                 </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>
+                <li><a href="faqs.html" class="nav_item">FAQS</a></li>                    
             </ul>
-        </div>
-        <div class="caja f">
-            <div class="icons">
-                <a href="https://twitter.com/?lang=es"><img src="./multimedia/twitter.png" alt="" width="30px"></a>
-                <a href="https://open.spotify.com/"><img src="./multimedia/spotify.png" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="./multimedia/instagram.png" alt="" width="30px"></a>
-            </div>
-            <div>
-                <form action="">
-                    <fieldset>
-                        <label for="legend">Suscribe to our newsletter</label>
-                        <br><br>
-                        <label for="e-mail"></label>
-                        <input class="mail" type="email" placeholder="Your email">
-                        <br><br>
-                        <button class="send">Suscribe</button>
-                    </fieldset>
-                </form>
-            </div>        
-        </div>
-        <div class="caja footer">
-            <p>Copyright © 2022 TheTinyShelf.com Terms of Use | Privacy Policy </p>
-        </div>
+        </section>
+        
+        <section class="icons">
+            <a href="https://www.facebook.com/">
+                <img data-aos="zoom-in" src="./assets/face.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img data-aos="zoom-in" src="./assets/ig.svg" alt="">
+            </a>
+            <a href="https://twitter.com/">
+                <img data-aos="zoom-in" src="./assets/twitter.svg" alt="">
+            </a>
+            <a href="https://pinterest.com/">
+                <img data-aos="zoom-in" src="./assets/pin.svg" alt="">
+            </a>
+        </section>
+        <section class="subscribe">
+            <form data-aos="zoom-in" action="" >
+                <fieldset>
+                    <h1>Get our latest news</h1>
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mail">
+                        <label for="mail"></label>
+                        <input type="text" placeholder="hello@example.com">
+                    </div>
+                    <div class="button">
+                        <button class="send">Subscribe</button>
+                    </div>
+                    
+                </fieldset>
+            </form>    
+        </section>
+        <span class="copy">Copyright © Todos los derechos reservados | The Tiny Shelf 2022</span>
+        
+        
+
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
-</html>
+ </html>

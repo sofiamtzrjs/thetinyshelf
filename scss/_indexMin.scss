@@ -1,0 +1,103 @@
+//variables//
+$font-comfortaa: 'comfortaa', cursive;
+$font-poppins:'Poppins', sans-serif;
+$dark-brown: #3a2903;
+
+
+.top{
+    grid-area: top;
+    height: 30rem;
+    background-image: url(../assets/bg.jpg);
+    color: beige;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1fr 1fr;
+    grid-template-areas: "empty" "texto" "wave";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.empty{
+    grid-area: empty;
+    height: 5rem;
+}
+.text{
+    grid-area: texto;
+}
+.top h1{
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top p{
+    font-size: 1rem;
+    padding: 10px 3rem 5px 3rem;
+}
+.wave{
+    grid-area: wave;
+    padding-top: 30px;
+}
+.legend{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    z-index: 3;
+}
+.swiper {
+    display:  none;
+} 
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100em;
+    padding: 2em;
+} 
+.card{  
+    width: 16em;
+    height: 22rem;
+    padding: 2em 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 2em;
+}
+.card_image{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 5px solid $dark-brown;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $dark-brown;
+}
+.card_title{
+    font-size: 1.5em;
+}
+.card_name{
+    font-size: .9rem;
+}
+.card_text{
+    text-align: center;
+    margin: 1em 0;
+    color: $dark-brown;
+}
+
+
+
+

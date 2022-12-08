@@ -1,100 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/collections.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website for book recomendations">
+        <meta name="keywords" content="books, shelf, recomendations, blog, indie, aesthetic, tryout, alt">
+        <!--ICONS-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+        <link rel="manifest" href="./icon/site.webmanifest">
+        <!--ANIMATIONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--ICONS-->
+        <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/index.css">
+        
     
-    <title>The Tiny Shelf</title>
-</head>
+        <title>Collections</title>
+    </head>
 
 <body>
     <header>
-        <div class="tittle">
+        <section class="logo">
             <a href="index.html">
-                <h1>The Tiny Shelf</h1>   
+                <h1 class="nav_logo animate__animated animate__fadeIn">
+                    The Tiny Shelf
+                </h1>
             </a>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="favs.html">Always Favs</a></li>
-                <li><a href="books.html">Books</a>
-                    <ul>
-                        <li><a href=".trending.html">Trending</a></li>
-                        <li><a href="bestsellers.html">Best sellers</a></li>
-                        <li><a href="genres.html">Genres</a></li>
+        </section>
+        <label for="menu" class="nav_label">
+            <img src="./assets/menu.svg" alt="">
+        </label>
+        <input type="checkbox" id="menu" class="nav_input">
+        <section class="menu animate__animated animate__fadeIn">
+            <ul class="nav_menu">
+                <li class="books"><a href="books.html" class="nav_item">Books</a>
+                    <ul class="sub_menu animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="sub_item">Trending</a></li>
+                        <li><a href="genres.html" class="sub_item">Genres</a></li>
                     </ul>
                 </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
             </ul>
-        </div>
-    </header> 
+        </section>
+    </header>
     <main>
-        <h1 style="font-family: 'Poppins', sans-serif;">Collections</h1>
-        <div class="start_slider">
-            <div class="box am" style="background-color:#748d8aff;">
-                <img src="./assets/fill.jpg" alt="" width="300px">
-                <p style="color:#ffff; font-family: 'Comfortaa', cursive;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ut repudiandae commodi odio accusamus vitae doloribus similique ducimus numquam dolores maxime deserunt libero, incidunt temporibus, quas, consectetur saepe deleniti aliquid.</p>
-                <p>⭐⭐⭐⭐⭐</p>
+        <div class="t">
+            <h1 style="text-align: center;">And now...</h1>
+            <p style="text-align: center;">We present you some of the most famous sagas trough the years , hope you like it ;)</p>
+        </div>
+        <div class="section">
+            <div class="tx">
+                <h1 style="text-align: center;">And now...</h1>
+                <p style="text-align: center;">We present you some of the most famous sagas trough the years , hope you like it ;)</p>
             </div>
-            <div class="box am" style="background-color:#748d8aff;">
-                <img src="./assets/fill.jpg" alt="" width="300px">
-                <p style="color:#ffff; font-family: 'Comfortaa', cursive;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ut repudiandae commodi odio accusamus vitae doloribus similique ducimus numquam dolores maxime deserunt libero, incidunt temporibus, quas, consectetur saepe deleniti aliquid.</p>
-                <p>⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="box am" style="background-color:#748d8aff;">
-                <img src="./assets/fill.jpg" alt="" width="300px">
-                <p style="color:#ffff; font-family: 'Comfortaa', cursive;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ut repudiandae commodi odio accusamus vitae doloribus similique ducimus numquam dolores maxime deserunt libero, incidunt temporibus, quas, consectetur saepe deleniti aliquid.</p>
-                <p>⭐⭐⭐⭐⭐</p>
-            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/564x/8c/9b/a8/8c9ba8c6475ad1d3e5b2e7f36341afcc.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">Harry Potter</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
 
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/38/5f/04/385f04187d7f03645325b48855bd5679.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">Percy Jackson</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/ec/dc/0b/ecdc0b13ddfacf86b902e4d34409ccc4.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">Twilight</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/a0/3d/a3/a03da39a5e0004eb337631a94dac9be9.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">The selection</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/fb/50/dd/fb50ddb4bf892acf0706bd00b7162cf7.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">The hunger games</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/fe/d3/d9/fed3d9295907f32d85a33e15c2719e54.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">Lord of the rings</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/f0/2f/6e/f02f6ec0fd57c9d7efa25ed4b16ae715.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">The Lunar Chronicles</h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/3c/f5/58/3cf5585d3785a43d54b53a0475da3057.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">A series of unfortunate events </h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
+            <div class="collect">
+                <div class="bookcov">
+                    <img src="https://i.pinimg.com/236x/d0/8b/ee/d08beefad3861c3ab8f5e066e053f835.jpg" alt="">
+                </div> 
+                <div class="nombre">
+                    <h1 style="font-size: 1em; text-align:center;">Bridgerton </h1>
+                    <p style="font-size: .7em; text-align:center;">And here there should be a cool saga description</p>
+                </div>         
+
+            </div>
         </div>
 
     </main>
 
-    <footer>
-        <div class="caja bc">
-            <h1>The Tiny Shelf</h1>
-        </div>
-        <div class="caja e">
-            <ul>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="">Always Favs</a></li>
-                <li><a href="books.html">Books</a>
-                    <ul>
-                        <li><a href="trending.html">Trending</a></li>
-                        <li><a href="bestsellers.html">Best sellers</a></li>
-                        <li><a href="genres.html">Genres</a></li>
+    <footer class="footer">
+        <section data-aos="zoom-in" class="foot_logo">
+            <a href="index.html">
+                <h1 class="animate__animated animate__fadeIn">
+                The Tiny Shelf
+                </h1>
+            </a>
+        </section>
+        <section data-aos="zoom-in" class="foot_nav animate__animated animate__fadeIn">
+            <ul class="foot_menu">
+                <li><a href="books.html" class="nav_item">Books</a>
+                    <ul class="foot_sub animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="nav_item">Trending</a></li>
+                        <li><a href="genres.html" class="nav_item">Genres</a></li>
                     </ul>
                 </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>
+                <li><a href="faqs.html" class="nav_item">FAQS</a></li>                    
             </ul>
-        </div>
-        <div class="caja f">
-            <div class="icons">
-                <a href="https://twitter.com/?lang=es"><img src="./assets/fill.jpg/twitter.png" alt="" width="30px"></a>
-                <a href="https://open.spotify.com/"><img src="./assets/fill.jpg/spotify.png" width="30px"></a>
-                <a href="https://www.instagram.com/"><img src="./assets/fill.jpg/instagram.png" alt="" width="30px"></a>
-            </div>
-            <div>
-                <form action="">
-                    <fieldset>
-                        <label for="legend">Suscribe to our newsletter</label>
-                        <br><br>
-                        <label for="e-mail"></label>
-                        <input class="mail" type="email" placeholder="Your email">
-                        <br><br>
-                        <button class="send">Suscribe</button>
-                    </fieldset>
-                </form>
-            </div>        
-        </div>
-        <div class="caja footer">
-            <p>Copyright © 2022 TheTinyShelf.com Terms of Use | Privacy Policy </p>
-        </div>
+        </section>
+        
+        <section class="icons">
+            <a href="https://www.facebook.com/">
+                <img data-aos="zoom-in" src="./assets/face.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img data-aos="zoom-in" src="./assets/ig.svg" alt="">
+            </a>
+            <a href="https://twitter.com/">
+                <img data-aos="zoom-in" src="./assets/twitter.svg" alt="">
+            </a>
+            <a href="https://pinterest.com/">
+                <img data-aos="zoom-in" src="./assets/pin.svg" alt="">
+            </a>
+        </section>
+        <section class="subscribe">
+            <form data-aos="zoom-in" action="" >
+                <fieldset>
+                    <h1>Get our latest news</h1>
+                    <div class="name">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div class="mail">
+                        <label for="mail"></label>
+                        <input type="text" placeholder="hello@example.com">
+                    </div>
+                    <div class="button">
+                        <button class="send">Subscribe</button>
+                    </div>
+                    
+                </fieldset>
+            </form>    
+        </section>
+        <span class="copy">Copyright © Todos los derechos reservados | The Tiny Shelf 2022</span>
+        
+        
+
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

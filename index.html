@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for book recomendations">
+    <meta name="keywords" content="books, shelf, recomendations, blog, indie, aesthetic, tryout, alt">
+    <!--ICONS-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
     <!--ANIMATIONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,38 +26,38 @@
     <title>The Tiny Shelf</title>
 </head>
 <body>
-    <main>
-        <header>
-            <section class="logo">
-                <a href="index.html">
-                    <h1 class="nav_logo animate__animated animate__fadeIn">
-                        The Tiny Shelf
-                    </h1>
-                </a>
-            </section>
-            <label for="menu" class="nav_label">
-                <img src="./assets/menu.svg" alt="">
-            </label>
-            <input type="checkbox" id="menu" class="nav_input">
-            <section class="menu animate__animated animate__fadeIn">
-                <ul class="nav_menu">
-                    <li class="books"><a href="books.html" class="nav_item">Books</a>
-                        <ul class="sub_menu animate__animated animate__fadeIn">
-                            <li><a href="trending.html" class="sub_item">Trending</a></li>
-                            <li><a href="genres.html" class="sub_item">Genres</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="collections.html" class="nav_item">Collections</a></li>
-                    <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
-                </ul>
-            </section>
-            
-        </header>
+    <header>
+        <section class="logo">
+            <a href="index.html">
+                <h1 class="nav_logo animate__animated animate__fadeIn">
+                    The Tiny Shelf
+                </h1>
+            </a>
+        </section>
+        <label for="menu" class="nav_label">
+            <img src="./assets/menu.svg" alt="">
+        </label>
+        <input type="checkbox" id="menu" class="nav_input">
+        <section class="menu animate__animated animate__fadeIn">
+            <ul class="nav_menu">
+                <li class="books"><a href="books.html" class="nav_item">Books</a>
+                    <ul class="sub_menu animate__animated animate__fadeIn">
+                        <li><a href="trending.html" class="sub_item">Trending</a></li>
+                        <li><a href="genres.html" class="sub_item">Genres</a></li>
+                    </ul>
+                </li>
+                <li><a href="collections.html" class="nav_item">Collections</a></li>
+                <li><a href="favs.html" class="nav_item">Always Favs</a></li>                    
+            </ul>
+        </section>
+    </header>
+    <main class="index">
+        
         <section class="top">
             <div class="empty"></div>
             <div data-aos="fade-up" class="text">
                 <h1>Welcome to our shelf!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, necessitatibus fugiat animi inventore ducimus tempora placeat laboriosam consequatur optio, recusandae unde praesentium, id voluptate non. Sunt nostrum eaque ducimus cumque.</p>
+                <p>Hello there! Thanks for visiting our site, we've gathered some of the most amazing books (to our opinion) for all of you to check out. You'll find out books from romance to mistery or something with crimes to solve. Hopefully after looking to the books you'll have a HUGE to read book an a probably empty pocket ;) Happy hunting!</p>
             </div>  
             <div data-aos="fade-up" style="height: 20rem; overflow: hidden;" >
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.97,100.17 C214.16,173.20 440.46,-22.19 587.18,103.13 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg>
@@ -69,7 +76,7 @@
             <div class="card_content">
                 <span class="card_title">Book tittle</span>
                 <span class="card_name">Author</span>
-                <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                 <div class="rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -86,7 +93,7 @@
             <div class="card_content">
                 <span class="card_title">Book tittle</span>
                 <span class="card_name">Author</span>
-                <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                 <div class="rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -103,7 +110,7 @@
             <div class="card_content">
                 <span class="card_title">Book tittle</span>
                 <span class="card_name">Author</span>
-                <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                 <div class="rating">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -123,7 +130,7 @@
               <div class="card_content">
                   <span class="card_title">Book tittle</span>
                   <span class="card_name">Author</span>
-                  <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                  <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                   <div class="rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -140,7 +147,7 @@
                 <div class="card_content">
                     <span class="card_title">Book tittle</span>
                     <span class="card_name">Author</span>
-                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                     <div class="rating">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -157,7 +164,7 @@
                 <div class="card_content">
                     <span class="card_title">Book tittle</span>
                     <span class="card_name">Author</span>
-                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                     <div class="rating">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -174,7 +181,7 @@
                   <div class="card_content">
                       <span class="card_title">Book tittle</span>
                       <span class="card_name">Author</span>
-                      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                      <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                       <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -191,7 +198,7 @@
                 <div class="card_content">
                     <span class="card_title">Book tittle</span>
                     <span class="card_name">Author</span>
-                    <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                    <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                     <div class="rating">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -208,7 +215,7 @@
                   <div class="card_content">
                       <span class="card_title">Book tittle</span>
                       <span class="card_name">Author</span>
-                      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
+                      <p class="card_text">Here goes an amazing book description that is soon to be displayed</p>
                       <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

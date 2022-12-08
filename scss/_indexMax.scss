@@ -1,0 +1,116 @@
+body{
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "navs" 
+    "top" 
+    "slider" 
+    "footer";
+}
+.top{
+    grid-area: top;
+    height: 53em;
+    width: 100%;
+    background-image: url(../assets/bg.jpg);
+    color: beige;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "empty" "texto" "wave";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.empty{
+    grid-area: empty;
+}
+.text{
+    grid-area: texto;
+}
+.top h1{
+    font-size: 3.5rem;
+}
+.top p{
+    font-size: 1.1em;
+    padding: 5px 6rem 5px 6rem;
+}
+.wave{
+    grid-area: wave;
+    padding-top: 1rem;
+}
+.legend{
+    padding-top: 1.1em;
+    font-size: 2rem;
+    text-align: center;
+    color: #3a2903;
+}
+.selection{
+    display: none;
+}
+.swiper {
+    padding: 0 5rem 0 5rem;
+    width: 80%;
+    display: flex;
+    height: 40em;
+}
+.swiper-wrapper {
+    grid-area: slider;
+    flex-direction: row;
+    align-items: center;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.card{  
+    width: 10em;
+    height: 30rem;
+    padding: 2em 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: beige;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card_image{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 5px solid #3a2903;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+.card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #3a2903;
+}
+.card_title{
+    font-size: 1.5rem;
+}
+.card_name{
+    font-size: 1.1rem;
+}
+.card_text{
+    text-align: center;
+    margin: 1em 0;
+    font-size: .9em;
+    color: #3a2903;
+}
+
+.swiper-button-next, .swiper-button-prev, i{
+    color: #3a2903;
+}

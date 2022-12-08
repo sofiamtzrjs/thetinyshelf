@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--ANIMATIONS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!--SLIDER-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <!--ICONS-->
-    <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website for book recomendations">
+        <meta name="keywords" content="books, shelf, recomendations, blog, indie, aesthetic, tryout, alt">
+        <!--ICONS-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+        <link rel="manifest" href="./icon/site.webmanifest">
+        <!--ANIMATIONS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+        <!--SLIDER-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <!--ICONS-->
+        <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/index.css">
+        
     
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/genres.css">
-    <title>The Tiny Shelf</title>
-</head>
+        <title>Genres</title>
+    </head>
 <body>
     <header>
         <section class="logo">
@@ -45,158 +52,191 @@
         </section>
     </header>
 
-    <main>
-        <section class="search">
+    <main >
+        <section class="gen">
             <h1>All this books are waiting for you!</h1>
             <section class="genres">
                 <ul class="genres_menu">
                     <li>
-                        <a href="#">All genres</a>
+                        <a href="#all">All genres</a>
                     </li>
                     <li>
-                        <a href="#">Fiction</a>
+                        <a href="#fiction">Fiction</a>
                     </li>
                     <li>
-                        <a href="#">Romance</a>
+                        <a href="#sci">Sci</a>
                     </li>
                     <li>
-                        <a href="#">Sci</a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
+                        <a href="#romance">Romance</a>
                     </li>
                 </ul>
-            </section>
-            
-
-            <section class="cards_top">
-                <div class="cards">
-                    <div class="card"> 
-                        <h2>All this time</h1>
-                        <h3>Mikki Daughtry & Rachel Lippincott</h2>
+            </section>    
+        </section>        
+        <section class="allgen" id="all" data-aos="zoom-in">
+            <h1>All genres</h1>
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                        <div class="rec_content">
+                            <div class="tittle">
+                                <h2>Twisted love</h2>
+                                <h3>Ana Huang</h3>
+                            </div>
+                            
+                            <div class="img">
+                                <img src="https://i.pinimg.com/236x/34/af/55/34af55a704dc7d9aa7a91313de928735.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>Shatter Me</h2>
+                            <h3>Tahere Mafi</h3>
+                        </div>
+                        
                         <div class="img">
-                            <img src="https://i.pinimg.com/564x/f2/ce/14/f2ce142e18f403b1192087b30cd2ee4f.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
-            </section>      
-        </section>
-        <section class="nytimes"></section>
-        <section class="booktok"></section>
-        <section class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div data-aos="fade-up" class="card swiper-slide">
-                  <div class="card_image">
-                      <img src="./assets/galeria.png" alt="card image">
-                  </div>
-                  <div class="card_content">
-                      <span class="card_title">Book tittle</span>
-                      <span class="card_name">Author</span>
-                      <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                      <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                  </div>
-                </div>
-                <div data-aos="fade-up" class="card swiper-slide">
-                    <div class="card_image">
-                        <img src="./assets/galeria.png" alt="card image">
-                    </div>
-                    <div class="card_content">
-                        <span class="card_title">Book tittle</span>
-                        <span class="card_name">Author</span>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                        <div class="rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
+                            <img src="https://i.pinimg.com/236x/7f/29/89/7f29891ce3cbbad8837b801d850d4843.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up" class="card swiper-slide">
-                    <div class="card_image">
-                        <img src="./assets/galeria.png" alt="card image">
-                    </div>
-                    <div class="card_content">
-                        <span class="card_title">Book tittle</span>
-                        <span class="card_name">Author</span>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                        <div class="rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>The Fine Print</h2>
+                            <h3>Lauren Asher</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/96/12/87/9612878322c8ceccaa0a02162b134a49.jpg" alt="">
                         </div>
                     </div>
-                  </div>
-                  <div data-aos="fade-up" class="card swiper-slide">
-                      <div class="card_image">
-                          <img src="./assets/galeria.png" alt="card image">
-                      </div>
-                      <div class="card_content">
-                          <span class="card_title">Book tittle</span>
-                          <span class="card_name">Author</span>
-                          <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <div data-aos="fade-up" class="card swiper-slide">
-                    <div class="card_image">
-                        <img src="./assets/galeria.png" alt="card image">
-                    </div>
-                    <div class="card_content">
-                        <span class="card_title">Book tittle</span>
-                        <span class="card_name">Author</span>
-                        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                        <div class="rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                        </div>
-                    </div>
-                  </div>
-                  <div data-aos="fade-up" class="card swiper-slide">
-                      <div class="card_image">
-                          <img src="./assets/galeria.png" alt="card image">
-                      </div>
-                      <div class="card_content">
-                          <span class="card_title">Book tittle</span>
-                          <span class="card_name">Author</span>
-                          <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, commodi vitae asperiores dolores quo eligendi magni maxime mollitia sunt hic.</p>
-                          <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                          </div>
-                      </div>
-                  </div>
-                
-                
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        </section>  
+        <section class="allgen" id="fiction" data-aos="zoom-in">
+            <h1>Fiction</h1>
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                        <div class="rec_content">
+                            <div class="tittle">
+                                <h2>Twisted love</h2>
+                                <h3>Ana Huang</h3>
+                            </div>
+                            
+                            <div class="img">
+                                <img src="https://i.pinimg.com/236x/34/af/55/34af55a704dc7d9aa7a91313de928735.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>Shatter Me</h2>
+                            <h3>Tahere Mafi</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/7f/29/89/7f29891ce3cbbad8837b801d850d4843.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>The Fine Print</h2>
+                            <h3>Lauren Asher</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/96/12/87/9612878322c8ceccaa0a02162b134a49.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
-        
+        <section class="allgen" id="sci" data-aos="zoom-in">
+            <h1>Sci</h1>
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                        <div class="rec_content">
+                            <div class="tittle">
+                                <h2>Twisted love</h2>
+                                <h3>Ana Huang</h3>
+                            </div>
+                            
+                            <div class="img">
+                                <img src="https://i.pinimg.com/236x/34/af/55/34af55a704dc7d9aa7a91313de928735.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>Shatter Me</h2>
+                            <h3>Tahere Mafi</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/7f/29/89/7f29891ce3cbbad8837b801d850d4843.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>The Fine Print</h2>
+                            <h3>Lauren Asher</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/96/12/87/9612878322c8ceccaa0a02162b134a49.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="allgen" id="romance" data-aos="zoom-in">
+            <h1>Romance</h1>
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                        <div class="rec_content">
+                            <div class="tittle">
+                                <h2>Twisted love</h2>
+                                <h3>Ana Huang</h3>
+                            </div>
+                            
+                            <div class="img">
+                                <img src="https://i.pinimg.com/236x/34/af/55/34af55a704dc7d9aa7a91313de928735.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>Shatter Me</h2>
+                            <h3>Tahere Mafi</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/7f/29/89/7f29891ce3cbbad8837b801d850d4843.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>The Fine Print</h2>
+                            <h3>Lauren Asher</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/96/12/87/9612878322c8ceccaa0a02162b134a49.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </main>   
 
     <footer class="footer">
         <section data-aos="zoom-in" class="foot_logo">
@@ -221,16 +261,16 @@
         </section>
         
         <section class="icons">
-            <a href="">
+            <a href="https://www.facebook.com/">
                 <img data-aos="zoom-in" src="./assets/face.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/">
                 <img data-aos="zoom-in" src="./assets/ig.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://twitter.com/">
                 <img data-aos="zoom-in" src="./assets/twitter.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://pinterest.com/">
                 <img data-aos="zoom-in" src="./assets/pin.svg" alt="">
             </a>
         </section>
@@ -258,7 +298,6 @@
         
 
     </footer>
-    
     
     
 

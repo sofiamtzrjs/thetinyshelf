@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for book recomendations">
+    <meta name="keywords" content="books, shelf, recomendations, blog, indie, aesthetic, tryout, alt">
+    <!--ICONS-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
     <!--ANIMATIONS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,8 +21,8 @@
     <script src="https://kit.fontawesome.com/f48ba9646e.js" crossorigin="anonymous"></script>
     
     <!--CSS-->
-    <link rel="stylesheet" href="./css/book.css">
-    <title>The Tiny Shelf</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Books</title>
 </head>
 <body>
     <header>
@@ -44,69 +51,69 @@
         </section>
     </header>
 
-    <main>
+    <main class="books">
         <section class="search">
             <h1>All this books are waiting for you!</h1>
             
-            <section class="bar" data-aos="zoom-in">
-                <div class="look" >
-                    <button>
-                        <a href="">
-                            <img src="/assets/search.svg" alt="">
-                        </a>
-                    </button>
-                </div>
-                <div class="text">
-                    <input type="text" placeholder="Look for books in our shelf!">
-                </div>
-            </section>
+        <section class="bar" data-aos="zoom-in">
+            <div class="look" >
+                <button>
+                    <a href="">
+                        <img src="/assets/search.svg" alt="">
+                    </a>
+                </button>
+            </div>
+            <div class="text">
+                <input type="text" placeholder="Look for books in our shelf!">
+            </div>
+        </section>
 
-            <section class="trend" data-aos="zoom-in">
-                <div class="cards_top animate__animated animate__fadeIn">
-                    <div class="card" data-aos="fade-up"> 
-                        <div class="card_content">
-                            <div class="tittle">
-                                <h2>All this time</h2>
-                                <h3>Mikki Daughtry</h3>
-                            </div>
-                            
-                            <div class="img">
-                                <img src="https://i.pinimg.com/564x/f2/ce/14/f2ce142e18f403b1192087b30cd2ee4f.jpg" alt="">
-                            </div>
+        <section class="trend" data-aos="zoom-in">
+            <div class="recs_top animate__animated animate__fadeIn">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>All this time</h2>
+                            <h3>Mikki Daughtry</h3>
                         </div>
-                    </div>
-                    <div class="card" data-aos="fade-up"> 
-                        <div class="card_content">
-                            <div class="tittle">
-                                <h2>The antidote</h2>
-                                <h3>Shelley Sackier</h3>
-                            </div>
-                            
-                            <div class="img">
-                                <img src="https://i.pinimg.com/564x/90/6b/50/906b5055ae3e1c64272106b78a9bcd35.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-up"> 
-                        <div class="card_content">
-                            <div class="tittle">
-                                <h2>Bells of Shangri-La</h2>
-                                <h3>Frances Hardringe</h3>
-                            </div>
-                            
-                            <div class="img">
-                                <img src="https://i.pinimg.com/236x/78/47/fc/7847fc20c12708390d92ee86de80d00c.jpg" alt="">
-                            </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/f2/ce/14/f2ce142e18f403b1192087b30cd2ee4f.jpg" alt="">
                         </div>
                     </div>
                 </div>
-            </section>      
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>The antidote</h2>
+                            <h3>Shelley Sackier</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/564x/90/6b/50/906b5055ae3e1c64272106b78a9bcd35.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
+                        <div class="tittle">
+                            <h2>Bells of Shangri-La</h2>
+                            <h3>Frances Hardringe</h3>
+                        </div>
+                        
+                        <div class="img">
+                            <img src="https://i.pinimg.com/236x/78/47/fc/7847fc20c12708390d92ee86de80d00c.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
         </section>
         <section class="nytimes" data-aos="zoom-in">
             <h1>New York Times best sellers</h1>
-            <div class="cards">
-                <div class="card" data-aos="fade-up"> 
-                    <div class="card_content">
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
                         <div class="tittle">
                             <h2>Fairy Tale</h2>
                             <h3>Stephen King</h3>
@@ -117,8 +124,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-up"> 
-                    <div class="card_content">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
                         <div class="tittle">
                             <h2>All about love  </h2>
                             <h3>Bell Hooks</h3>
@@ -129,8 +136,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-up"> 
-                    <div class="card_content">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
                         <div class="tittle">
                             <h2>Book lovers</h2>
                             <h3>Emily Henry</h3>
@@ -146,9 +153,9 @@
 
         <section class="booktok" data-aos="zoom-in">
             <h1>Booktok Recomendations</h1>
-            <div class="cards">
-                <div class="card" data-aos="fade-up"> 
-                        <div class="card_content">
+            <div class="recs">
+                <div class="rec" data-aos="fade-up"> 
+                        <div class="rec_content">
                             <div class="tittle">
                                 <h2>Twisted love</h2>
                                 <h3>Ana Huang</h3>
@@ -159,8 +166,8 @@
                             </div>
                         </div>
                 </div>
-                <div class="card" data-aos="fade-up"> 
-                    <div class="card_content">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
                         <div class="tittle">
                             <h2>Shatter Me</h2>
                             <h3>Tahere Mafi</h3>
@@ -171,8 +178,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-up"> 
-                    <div class="card_content">
+                <div class="rec" data-aos="fade-up"> 
+                    <div class="rec_content">
                         <div class="tittle">
                             <h2>The Fine Print</h2>
                             <h3>Lauren Asher</h3>
@@ -212,16 +219,16 @@
         </section>
         
         <section class="icons">
-            <a href="">
+            <a href="https://www.facebook.com/">
                 <img data-aos="zoom-in" src="./assets/face.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/">
                 <img data-aos="zoom-in" src="./assets/ig.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://twitter.com/">
                 <img data-aos="zoom-in" src="./assets/twitter.svg" alt="">
             </a>
-            <a href="">
+            <a href="https://pinterest.com/">
                 <img data-aos="zoom-in" src="./assets/pin.svg" alt="">
             </a>
         </section>

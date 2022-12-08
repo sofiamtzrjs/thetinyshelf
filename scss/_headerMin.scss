@@ -1,0 +1,86 @@
+header{
+    grid-area: navs;
+    width: 100%;
+    height: 6em;
+    position: fixed;
+    background-color: #3a290383;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "logo label"
+    "nav nav"; 
+}
+.nav_logo{
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    width: 100%;
+    font-size: 1.9rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    grid-area: logo;
+    color: #f5deb3;
+}
+.nav_label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100px;
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    grid-area: label;
+    z-index: 4;
+}
+.menu{
+    grid-area: nav;
+    display: none;
+    position: fixed;
+    border-radius: 2px 2px 10px 10px;
+    background: white;
+    box-shadow: #0000003d 0px 3px 8px;
+    font-family: 'Comfortaa', cursive;
+    height: 0;
+    width: 100%;
+    transition: height 7s ease-out;
+}
+.nav_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;  
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    color: #3a2903;
+    font-size: 1.2rem;
+} 
+.nav_input:checked +.menu{
+    position: absolute;
+    top: .1rem;
+    bottom: 0;
+    height: fit-content;
+    display: block;
+}
+.nav_item{
+    color: #3a2903;
+}
+.sub_menu{
+    height: 100px;
+    width: 150px;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;  
+    padding-top: 1rem;
+    padding-left: .5rem;
+    justify-content: baseline;
+    align-items: baseline;
+    color: #3a2903;
+    font-size: 1.5rem;
+}
+.sub_item{
+    color: #3a2903;
+    font-size: 1rem;
+}
